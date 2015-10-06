@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".Home">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"
+        android:background="#000000">
+
+        <ImageView
+            android:layout_width="141dp"
+            android:layout_height="61dp"
+            android:id="@+id/imageView"
+            android:layout_gravity="left|center_vertical"
+            android:layout_marginLeft="15dp"
+            android:nestedScrollingEnabled="true"
+            android:onClick="sandstormSpotify"
+            android:layout_marginTop="140dp"
+            android:src="@drawable/spotify" />
+
+        <ImageView
+            android:layout_width="141dp"
+            android:layout_height="61dp"
+            android:id="@+id/imageView2"
+            android:layout_gravity="right|center_vertical"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="140dp"
+            android:onClick="sandstormSoundcloud"
+            android:src="@drawable/soundcloud" />
+
+        <ImageView
+            android:layout_width="141dp"
+            android:layout_height="61dp"
+            android:id="@+id/imageView3"
+            android:layout_gravity="left|bottom"
+            android:src="@drawable/facebook"
+            android:layout_marginLeft="15dp"
+            android:layout_marginBottom="20dp" />
+
+        <ImageView
+            android:layout_width="141dp"
+            android:layout_height="61dp"
+            android:id="@+id/imageView4"
+            android:layout_gravity="right|bottom"
+            android:layout_marginRight="15dp"
+            android:layout_marginBottom="20dp"
+            android:src="@drawable/twitter" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="The song is:"
+            android:id="@+id/textView"
+            android:layout_gravity="center_horizontal|top"
+            android:textColor="#FFD300"
+            android:layout_marginTop="20dp"
+            android:fontFamily="sans-serif-condensed"
+            android:textStyle="bold|normal" />
+
+        <FrameLayout
+            android:layout_width="263dp"
+            android:layout_height="255dp"
+            android:layout_gravity="center"
+            android:background="#111111"
+            android:layout_marginBottom="50dp">
+
+            <ImageView
+                android:layout_width="140dp"
+                android:layout_height="140dp"
+                android:id="@+id/imageView5"
+                android:layout_gravity="center_horizontal|top"
+                android:src="@drawable/darude" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Darude:"
+                android:id="@+id/textView2"
+                android:layout_gravity="center"
+                android:textColor="#FFD300"
+                android:layout_marginTop="40dp"
+                android:textStyle="bold|normal|italic" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Sandstorm"
+                android:id="@+id/textView3"
+                android:layout_gravity="center_horizontal|bottom"
+                android:layout_marginBottom="30dp"
+                android:textColor="#FFD300"
+                android:textStyle="bold" />
+        </FrameLayout>
+    </FrameLayout>
+</RelativeLayout>
